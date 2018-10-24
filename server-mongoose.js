@@ -8,10 +8,6 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
-// Variables which will be used to store references
-let mongoConn;
-let pizzaDb;
-
 // Body parser middleware to read body on requests that have a body
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
