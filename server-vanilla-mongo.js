@@ -20,7 +20,7 @@ app.get('/', (req, res, next) => {
   res.status(200).send('Welcome');
 });
 
-app.get('/toppings', (req, res, next) => {
+app.ge('/toppings', (req, res, next) => {
   const query = {}; // Why is this an empty object?
   pizzaDb.collection('toppings').find(query).toArray((err, toppings) => {
     if (err) res.status(500).send(err);
